@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import heroBg from "../../assets/pole.jpg";
 
-export const HeroSection = styled.section`
-  padding: 104px 8px;
-  font-family: "Cuprum", sans-serif;
-  color: #fff;
-
+export const HeroBackground = styled.div`
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.6),
       rgba(47, 48, 58, 0.6)
@@ -13,14 +12,25 @@ export const HeroSection = styled.section`
     url(${heroBg});
   background-repeat: no-repeat;
   background-size: cover;
+`;
+
+export const HeroSection = styled.section`
+  margin-left: auto;
+  margin-right: auto;
+  padding: 104px 8px;
+  font-family: "Cuprum", sans-serif;
+  color: #fff;
 
   text-align: center;
 
   @media (min-width: 768px) {
+    width: 768px;
     padding: 150px 12px;
   }
   @media (min-width: 1280px) {
-    padding: 64px 28px;
+    /* max-width: 1600px; */
+    width: 1280px;
+    padding: 64px 12px;
   }
 `;
 
@@ -43,7 +53,7 @@ export const Title = styled.h1`
 `;
 
 export const TruckImg = styled.img`
-  padding: 10px;
+  /* padding: 10px; */
   height: 140px;
   margin-left: auto;
   margin-right: auto;
@@ -52,9 +62,9 @@ export const TruckImg = styled.img`
     height: 280px;
   }
   @media (min-width: 1280px) {
-    height: 470px;
+    height: 400px;
     position: relative;
-    z-index: 999;
+    top: 150px;
   }
 `;
 
@@ -103,6 +113,6 @@ export const FlexContainer = styled.div`
     align-items: center;
   }
   @media (min-width: 1280px) {
-    padding: 100px 100px 0px 0px;
+    padding: 50px 100px 0px 0px;
   }
 `;
