@@ -2,8 +2,6 @@ import styled from "styled-components";
 import heroBg from "../../assets/pole.jpg";
 
 export const HeroBackground = styled.div`
-  /* display: flex;
-  justify-content: center; */
   width: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.6),
@@ -18,7 +16,7 @@ export const HeroSection = styled.section`
   margin-left: auto;
   margin-right: auto;
   padding: 104px 8px;
-  font-family: "Cuprum", sans-serif;
+  /* font-family: "Cuprum", sans-serif; */
   color: #fff;
 
   text-align: center;
@@ -43,7 +41,6 @@ export const Title = styled.h1`
   font-size: 27px;
   font-weight: 700;
   line-height: 0.97;
-  letter-spacing: -1px;
 
   margin-bottom: 40px;
 
