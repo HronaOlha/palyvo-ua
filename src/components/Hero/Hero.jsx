@@ -1,6 +1,7 @@
 // import React from 'react'
 // import heroBg from "../../assets/pole.jpg";
 import truckImg from "../../assets/truck.png";
+// import { useInView } from "react-intersection-observer";
 
 import {
   HeroBackground,
@@ -13,6 +14,11 @@ import {
 } from "./Hero.styled";
 
 const Hero = () => {
+  // const { ref, inView, entry } = useInView({
+  //   /* Optional options */
+  //   threshold: 0,
+  // });
+
   return (
     <HeroBackground>
       <HeroSection>
@@ -20,7 +26,9 @@ const Hero = () => {
         <Title>Власний імпорт нафтопродуктів з Європи</Title>
 
         <FlexContainer>
-          <TruckImg src={truckImg} alt="red truck" />
+          <div ref={ref}>
+            <TruckImg src={truckImg} alt="red truck" />
+          </div>
 
           <div>
             <HeroText>
